@@ -1,2 +1,37 @@
-<p>meu nome é {{nome}} e {{idade}} </p>
-<router-outlet></router-outlet>
+<!-- <p>meu nome é {{nome}} e tenho {{idade}} </p>
+<p>Lançando um dado: {{lancarDado()}}</p>
+
+<div class="container my-3 border p-3">
+  <form>
+  <div class="form-group">
+  <label for="nomeInput">Nome</label>
+  <input type="nome" 
+    class="form-control"
+    id="nomeInput"
+    placeholder="Digite um nome"
+    #nomeInput>
+  
+  </div>
+
+  <button 
+  type="button" 
+
+  (click)="adicionar(nomeInput)">Adicionar</button>
+
+  <div class="alert alert-primary mt-3 p-3"p-3 [hidden]=esconderCaixa>
+    {{nome}}
+    </div>
+  </form>
+  </div> -->
+  <div class="container my-3 border p-3">
+    <div class="form-group">
+      <label for="numeroInput">Escolha um número</label>
+      <input type="numero" [(ngModel)]="numero" 
+            class="form-control" 
+            id="numeroInput"
+            placeholder="Escolha um número"
+            #nomeInput>
+    <div class="alert alert-primary mt-3 p-3 text-center">{{numero}}</div>
+    </div>
+    <button type="button" (click)="escolher()" class="btn btn-primary btn-block">Escolher para
+    mim</button>
